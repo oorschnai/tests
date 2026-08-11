@@ -1,0 +1,14 @@
+# Root-level artifacts
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Local build artifacts in subprojects
+**/target/
+**/build/
+**/.gradle/
+**/.deno/
+**/node_modules/

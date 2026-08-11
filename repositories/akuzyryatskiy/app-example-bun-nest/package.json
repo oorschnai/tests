@@ -1,0 +1,23 @@
+{
+  "name": "app-example-bun-nest",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "nest build",
+    "start": "bun run src/main.ts",
+    "start:dev": "bun --watch src/main.ts",
+    "start:prod": "bun dist/main.js"
+  },
+  "dependencies": {
+    "@nestjs/common": "^11.1.9",
+    "@nestjs/core": "^11.1.9",
+    "@nestjs/platform-express": "^11.1.9",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^11.0.10",
+    "@types/node": "^22.15.30",
+    "typescript": "^5.8.3"
+  }
+}

@@ -1,0 +1,14 @@
+﻿{
+  "name": "app-example-bun-hapi",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "start": "bun run index.js",
+    "dev": "bun --watch index.js",
+    "build": "echo \"No build step for Hapi example\""
+  },
+  "dependencies": {
+    "@hapi/hapi": "^21.4.3"
+  }
+}

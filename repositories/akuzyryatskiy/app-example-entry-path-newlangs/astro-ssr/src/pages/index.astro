@@ -1,0 +1,25 @@
+---
+const appName = 'app-example-astro-ssr';
+const now = new Date().toISOString();
+---
+
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro SSR Example</title>
+  </head>
+  <body>
+    <main style="max-width: 720px; margin: 3rem auto; font-family: system-ui, sans-serif; line-height: 1.6;">
+      <h1>Timeweb Cloud + Astro SSR = ❤️</h1>
+      <p>Репозиторий: <strong>{appName}</strong></p>
+      <p>Время рендера на сервере: <code>{now}</code></p>
+      <ul>
+        <li>Фреймворк: Astro</li>
+        <li>Режим: SSR</li>
+        <li>Запуск: <code>node ./dist/server/entry.mjs</code></li>
+      </ul>
+    </main>
+  </body>
+</html>
