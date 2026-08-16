@@ -1,8 +1,0 @@
-{
-  "imports": {
-    "@hapi/hapi": "npm:@hapi/hapi@^21.4.4"
-  },
-  "tasks": {
-    "start": "deno run --allow-net --allow-env --allow-read --allow-sys main.ts"
-  }
-}
