@@ -1,0 +1,14 @@
+.git
+.github
+*.pyc
+__pycache__
+search.db
+stuff/
+docs/
+examples/
+legacy/
+tests/
+frontend/node_modules
+packages/*/node_modules
+src/enterprise_platform/transport/
+static-collected/

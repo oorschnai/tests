@@ -56,4 +56,4 @@ jobs:
                   DB_USER: ${{ matrix.db_user }}
                   DB_PASSWORD: ${{ matrix.db_password }}
                   SECRET_KEY: dummy-key
-              run: python manage.py test
+              run: python src/manage.py test

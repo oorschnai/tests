@@ -1,0 +1,26 @@
+[project]
+name = "enterprise-platform"
+version = "3.11.0"
+requires-python = ">=3.11"
+dynamic = ["dependencies"]
+
+[project.optional-dependencies]
+dev = ["mypy", "ruff"]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["enterprise_platform*"]
+
+[tool.ruff]
+line-length = 88
+exclude = ["legacy", "examples", "src/enterprise_platform/api/schema_registry.py"]
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "enterprise_platform.settings"
+pythonpath = ["src"]

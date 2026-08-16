@@ -27,7 +27,7 @@ jobs:
             - name: Run Tests
               env:
                   SECRET_KEY: dummy-key
-              run: coverage run --omit=*/tests/*,*/migrations/* --source=hc manage.py test
+              run: coverage run --omit=*/tests/*,*/migrations/* --source=src/enterprise_platform src/manage.py test
             - name: Coveralls
               run: coveralls --service=github
               env:
