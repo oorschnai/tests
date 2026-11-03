@@ -22,3 +22,13 @@ go run .
 Откройте `http://localhost:8080/`. Для другого порта, например, запустите `PORT=3000 python3 app.py`. Одновременно запускаемым приложениям нужны разные порты.
 
 При развёртывании выберите каталог соответствующего приложения как корень проекта и укажите команду запуска из примера выше. Python использует `http.server`, Node.js — `node:http`, Go — `net/http`.
+
+---
+
+| Параметр | Python | Node.js | Go |
+| --- | --- | --- | --- |
+| Путь к проекту | `examples/stdlib-web-apps/python` | `examples/stdlib-web-apps/node` | `examples/stdlib-web-apps/go` |
+| Язык и версия | Python 3.12 | Node.js 22 | Go 1.25 |
+| Фреймворк | Flask | Express | Gin |
+| Команда сборки | `true` | `true` | `go build -o main .` |
+| Команда запуска | `python3 app.py` | `node index.js` | `./main` |
