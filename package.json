@@ -1,0 +1,11 @@
+{
+  "name": "apps-detection-node-express-process",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node node-server.js"
+  },
+  "dependencies": {
+    "express": "5.1.0"
+  }
+}
