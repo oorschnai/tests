@@ -1,0 +1,9 @@
+{
+  // The comment is intentional: this case must exercise deno.jsonc.
+  "imports": {
+    "express": "npm:express@4.21.2"
+  },
+  "tasks": {
+    "start": "deno run --allow-net --allow-env --allow-read main.ts"
+  }
+}
